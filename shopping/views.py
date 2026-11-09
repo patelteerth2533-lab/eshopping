@@ -425,7 +425,7 @@ def register(request):
         )
         request.session["user_name"] = user.name
         request.session["user_id"] = user.id
-        messages.success(request, f"Welcome to E-Shop, {user.name}! Account created.")
+        messages.success(request, f"Welcome to PATEL store, {user.name}! Account created.")
         return redirect("home")
 
     return render(request, "register.html")
@@ -435,3 +435,4 @@ def logout(request):
     request.session.flush()
     messages.info(request, "You have been logged out.")
     return redirect("home")
+

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: yash-eshopping
+    name: patel-store
     runtime: python
     plan: free
     buildCommand: bash build.sh
@@ -17,8 +17,8 @@ services:
       - key: CSRF_TRUSTED_ORIGINS
         value: "https://*.onrender.com"
       - key: ADMIN_USERNAME
-        value: admin
+        value: teerthpatel
       - key: ADMIN_PASSWORD
-        value: Admin@12345
+        value: teerth2611
       - key: ADMIN_EMAIL
-        value: admin@example.com
+        value: teerthpatel@example.com

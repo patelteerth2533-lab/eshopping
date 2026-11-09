@@ -1,4 +1,4 @@
-# EShopping - Modern Django E-Commerce Platform
+# PATEL store - Modern Django E-Commerce Platform
 
 A feature-rich e-commerce web application built using Python and Django, ready for local development and live deployment on Render.
 
@@ -13,7 +13,7 @@ You can easily deploy this repository to **Render (render.com)** for free:
 2. Go to [Render Dashboard](https://dashboard.render.com/) and click **New +** > **Web Service**.
 3. Connect your GitHub repository (`eshopping`).
 4. Set the following settings:
-   - **Name**: `eshopping-live` (or any name you prefer)
+   - **Name**: `patel-store-live` (or any name you prefer)
    - **Region**: Choose the closest region (e.g. Singapore or Frankfurt)
    - **Branch**: `main`
    - **Runtime**: `Python 3`
@@ -26,9 +26,9 @@ You can easily deploy this repository to **Render (render.com)** for free:
    - `SECRET_KEY` = *(click Generate or enter a long random string)*
    - `ALLOWED_HOSTS` = `*`
    - `CSRF_TRUSTED_ORIGINS` = `https://*.onrender.com`
-   - `ADMIN_USERNAME` = `admin`
-   - `ADMIN_PASSWORD` = `Admin@12345`
-   - `ADMIN_EMAIL` = `admin@example.com`
+   - `ADMIN_USERNAME` = `teerthpatel`
+   - `ADMIN_PASSWORD` = `teerth2611`
+   - `ADMIN_EMAIL` = `teerthpatel@example.com`
 6. Click **Deploy Web Service**.
 7. Render will automatically run `build.sh` (installs dependencies, collects static files, applies migrations, and loads demo products).
 

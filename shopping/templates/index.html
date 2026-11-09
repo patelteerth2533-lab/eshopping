@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}E-Shop | Everyday, well chosen{% endblock %}
+{% block title %}PATEL store | Everyday, well chosen{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -328,7 +328,7 @@
     <nav class="navbar navbar-expand-lg py-2" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2 me-lg-4" href="{% url 'home' %}">
-                <img class="brand-logo" src="{% static 'shopping/eshopping-logo.svg' %}" alt="EShopping">
+                <img class="brand-logo" src="{% static 'shopping/eshopping-logo.svg' %}" alt="PATEL store">
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#shopNavigation" aria-controls="shopNavigation" aria-expanded="false"
@@ -392,18 +392,14 @@
                     <!-- Wishlist Button -->
                     <a class="icon-button position-relative" href="{% url 'wishlist' %}" title="Wishlist">
                         <i class="bi bi-heart"></i>
-                        {% if liked_count %}<span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-warning">{{
-                            liked_count }}</span>{% endif %}
+                        {% if liked_count %}<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-warning">{{ liked_count }}</span>{% endif %}
                     </a>
 
                     <!-- Cart Drawer Button -->
                     <button class="icon-button position-relative" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#shoppingCart" title="Shopping Bag">
                         <i class="bi bi-bag"></i>
-                        {% if cart_count %}<span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{
-                            cart_count }}</span>{% endif %}
+                        {% if cart_count %}<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ cart_count }}</span>{% endif %}
                     </button>
                 </div>
             </div>
@@ -746,7 +742,7 @@
     <div class="container py-4">
         <div class="newsletter-card p-4 p-md-5 text-center">
             <i class="bi bi-envelope-heart fs-1 text-success d-block mb-2"></i>
-            <h3 class="fw-bold mb-2">Join the E-Shop Circle</h3>
+            <h3 class="fw-bold mb-2">Join the PATEL store Circle</h3>
             <p class="text-muted small mb-4" style="max-width: 460px; margin-inline: auto;">
                 Subscribe to get early access to seasonal drops, secret flash discounts, and curated design edits.
             </p>
@@ -807,7 +803,7 @@
             <div class="col-md-4">
                 <a href="{% url 'home' %}">
                     <img class="footer-brand-logo mb-2" src="{% static 'shopping/eshopping-logo.svg' %}"
-                        alt="EShopping">
+                        alt="PATEL store">
                 </a>
                 <p class="small text-white-50 mb-0">Thoughtfully curated essentials and timeless finds for your everyday
                     life.</p>
@@ -828,10 +824,12 @@
         </div>
         <hr class="border-secondary opacity-25">
         <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small text-white-50">
-            <div>&copy; 2026 E-Shop Project. All rights reserved.</div>
+            <div>&copy; 2026 PATEL store. All rights reserved.</div>
             <div class="mt-2 mt-sm-0">Crafted with Django & Bootstrap</div>
         </div>
     </div>
 </footer>
 
 {% endblock %}
+
+

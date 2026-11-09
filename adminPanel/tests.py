@@ -19,7 +19,7 @@ class AdminDashboardTests(TestCase):
 
 		self.assertRedirects(
 			response,
-			f"{reverse('admin:login')}?next={reverse('admin_dashboard')}",
+			f"{reverse('admin_login')}?next={reverse('admin_dashboard')}",
 		)
 
 	def test_staff_can_view_dashboard_without_customer_passwords(self):
@@ -35,5 +35,5 @@ class AdminDashboardTests(TestCase):
 		self.assertEqual(response.status_code, 200)
 		self.assertContains(response, "Asha Patel")
 		self.assertContains(response, "asha@example.com")
-		self.assertContains(response, "Registered customers")
+		self.assertContains(response, "Registered Customers")
 		self.assertNotContains(response, "customer-secret")

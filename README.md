@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PATEL store - Modern Django E-Commerce Platform
 
 A feature-rich e-commerce web application built using Python and Django, ready for local development and live deployment on Render.
@@ -87,3 +88,6 @@ Visit:
 - **Cart & Wishlist**: Session-based cart, quantity adjustments, wishlist bookmarking.
 - **Checkout & Order History**: Seamless checkout with Cash on Delivery or UPI QR, customer order history tracking.
 - **Custom Admin Dashboard**: Product catalog management (CRUD), order status updating, customer directory, revenue & analytics overview.
+=======
+# eshopping
+>>>>>>> c94932ac55576e382ef6f7b3fd7863ea7fd8bc96
